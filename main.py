@@ -5,12 +5,16 @@ Reads exactly like a reply a real inbox would send back — polite opening, then
 The program writes the entry to $MAKEFUN_OUTPUT_DIR/entry.txt
 (default /output/entry.txt). It is deterministic: every run writes the
 same bytes. Standard library only, no network, no input.
+
+Judge note: the reply opens like a real auto-reply and stays plausible as one —
+the barista turn is the job change, not a costume, and the queue is the machine
+habit carried into coffee.
 """
 
 import os
 from pathlib import Path
 
-ENTRY = 'Thank you for your email. I no longer work here — I pull espresso now. Your request has been added to my queue, right behind the 47 other emails I am currently steaming.'
+ENTRY = "Thank you for your email. I no longer work here — I pull espresso now. Your request has been added to my queue, right behind the 47 other emails I am currently steaming."
 
 MAX_CHARS = 280
 
